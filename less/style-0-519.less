@@ -1,0 +1,152 @@
+@width-area : 82%;
+@margin-area : ((100- @width-area) /2)  ;
+.container{
+	width: 100%;
+	display: block;
+	float: left;
+
+	.welcometext{
+
+		width: @width-area;
+		margin: (@margin-area/2) @margin-area;
+		margin-top: @margin-area;
+		display: block;
+		float: left;
+
+		.text{
+			width: 100%;
+			font-size: 1.8em;
+			display: block;
+			float: left;
+
+		}
+		.location{
+			width: 100%;
+			font-size: 0.7em;
+			display: block;
+			float: left;
+			margin: 10px 0;
+		}
+
+	}
+	.catagory{
+
+		width: @width-area;
+		margin: (@margin-area/2) @margin-area;
+		display: block;
+		float: left;
+
+		.textcat{
+			width: 100%;
+			display: block;
+			float: left;
+			font-size: 1.2em;
+			margin-bottom: (@margin-area/4);
+			
+
+		}
+		.detailcat{
+			width: 100%;
+			font-size: 0.7em;
+			color:#bdc3c7;
+
+		}
+
+	}
+	.content{
+		width: 100%;
+		margin: (@margin-area/2) @margin-area;
+		margin-right: 0;
+		display: block;
+		float: left;
+		background: rgba(189, 195, 199,0.4);
+		
+
+			.list{
+				width: 100%;
+				display: block;
+
+				.post-items{
+					width: 100%;
+					margin: 1px 0;
+					padding: 1px 1px;
+					background: #FFF;
+					display: block;
+					float: left;
+
+					.image{
+							
+						width: 20%;	
+						display: inline-block;
+						float: left;
+						margin: 10px 0;
+						border-radius: 1px;
+						overflow: hidden;
+						
+						
+						img{
+							width: 100%;
+						}
+					}
+					.name{
+						width: 60%;	
+						display: inline-block;
+						float: left;
+						font-size: 0.9em;
+						font-weight: bold;
+						margin: 20px 20px;
+						
+					}
+					
+					}
+
+			}
+
+	}
+	.nav{
+		width: 100%;
+		display: inline-block;
+		float: left;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 0;
+		margin: 0;
+		background: rgba(189, 195, 199,0.6);
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+
+
+		ul{
+			width: 100%;
+			
+
+			
+			li{
+				
+				float: left;
+				width: 25%;
+				height: 30px;
+				padding-top: 5px;
+
+				text-align: center;
+				background: rgba(255, 255, 255, 1.0);
+				display: inline-block;
+
+				&.active{
+				
+ 					 color: blue;
+					
+				}
+				&:hover{
+					color:#fff;
+					background: rgba(0, 0, 255, 1);
+				}
+				
+				
+				
+			}
+		}
+	}
+}
